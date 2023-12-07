@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
-      <q-toolbar>
+      <q-toolbar class="bg-brown-7 text-white">
         <q-btn
           flat
           dense
@@ -16,7 +16,12 @@
       </q-toolbar>
     </q-header>
 
-    <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
+    <q-drawer
+      class="bg-brown-4 text-white"
+      v-model="leftDrawerOpen"
+      show-if-above
+      bordered
+    >
       <q-list>
         <q-item-label header> Negosud </q-item-label>
         <q-item link to="/passercommande">Passer commande</q-item>

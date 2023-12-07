@@ -9,6 +9,18 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/passercommande',
     component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/CommandeProduitsView.vue') },
+    ],
+  },
+  {
+    path: '/panier',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [{ path: '', component: () => import('pages/panierView.vue') }],
+  },
+  {
+    path: '/commande',
+    component: () => import('layouts/MainLayout.vue'),
     children: [{ path: '', component: () => import('pages/CommandeView.vue') }],
   },
 

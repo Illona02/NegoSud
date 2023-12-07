@@ -1,1 +1,1 @@
-<template>page commande</template>
+<template>commande</template>
